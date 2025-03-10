@@ -308,9 +308,9 @@ If you use this work in your research, please cite:
 
 ```bibtex
 @software{model_compression_pipeline,
-  author = {Your Name},
+  author = {Utkarsh Rajput},
   title = {Model Compression Pipeline},
-  year = {2023},
+  year = {2025},
   url = {https://github.com/1Utkarsh1/model-compression-pipeline}
 }
 ```
