@@ -1,0 +1,71 @@
+# Model Compression Pipeline Configuration
+
+# Dataset Configuration
+dataset:
+  name: cifar10  # Options: cifar10, cifar100, imagenet
+  batch_size: 128
+  num_workers: 4
+
+# Base Model Configuration
+model:
+  architecture: resnet50  # Options: resnet18, resnet34, resnet50, resnet101, mobilenet, efficientnet
+  pretrained: true
+
+# Training Configuration
+training:
+  epochs: 100
+  learning_rate: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+  scheduler: cosine  # Options: cosine, step, plateau
+  optimizer: sgd     # Options: sgd, adam
+
+# Pruning Configuration
+pruning:
+  method: magnitude  # Options: magnitude, random, structured
+  rate: 0.5          # Pruning rate (0.0 to 1.0)
+  fine_tune_epochs: 20
+  fine_tune_lr: 0.001
+
+# Quantization Configuration
+quantization:
+  method: post_training  # Options: post_training, quantization_aware
+  bits: 8                # Options: 8, 4, 2
+  qat_epochs: 10
+  qat_lr: 0.0001
+
+# Distillation Configuration
+distillation:
+  student: resnet18       # Options: resnet18, mobilenet, efficientnet-b0
+  alpha: 0.5              # Weight for distillation loss (0.0 to 1.0)
+  temperature: 2.0
+  epochs: 100
+  learning_rate: 0.01
+
+# Evaluation Configuration
+evaluation:
+  metrics:
+    - accuracy
+    - size
+    - latency
+    - memory
+  num_batches_latency: 100
+  warmup_batches: 10
+  
+# Paths Configuration
+paths:
+  results_dir: results
+  logs_dir: results/logs
+  visualizations_dir: results/visualizations
+  
+# Hardware Configuration
+hardware:
+  device: cuda  # Options: cuda, cpu
+  gpu_id: 0
+  precision: float32  # Options: float32, float16, bfloat16
+
+# Reporting Configuration
+reporting:
+  generate_html_report: true
+  plot_metrics: true
+  save_model_summary: true 

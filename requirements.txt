@@ -1,0 +1,29 @@
+# Core Deep Learning Frameworks
+torch
+torchvision
+tensorflow
+tensorflow-model-optimization
+
+# Data Processing
+numpy
+pandas
+pillow
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+
+# Experiment Tracking
+tensorboard
+mlflow
+
+# Utilities
+tqdm
+pyyaml
+jupyterlab
+ipywidgets
+
+# Optional: Optimization and Deployment
+onnx
+onnxruntime 
