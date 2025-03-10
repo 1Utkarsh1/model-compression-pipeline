@@ -35,7 +35,7 @@ This project demonstrates an end-to-end machine learning optimization workflow t
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/model-compression-pipeline.git
+git clone https://github.com/1Utkarsh1/model-compression-pipeline.git
 cd model-compression-pipeline
 
 # Install dependencies
@@ -92,9 +92,9 @@ If you use this code in your research, please cite:
 
 ```
 @software{model_compression_pipeline,
-  author = {Your Name},
+  author = {Utkarsh Rajput},
   title = {Model Compression Pipeline},
-  year = {2023},
-  url = {https://github.com/yourusername/model-compression-pipeline}
+  year = {2025},
+  url = {https://github.com/1Utkarsh1/model-compression-pipeline}
 }
 ``` 
