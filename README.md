@@ -23,9 +23,6 @@
 
 The Model Compression Pipeline is an end-to-end framework designed to compress state-of-the-art deep learning models while preserving accuracy. This project implements various compression techniques including pruning, quantization, and knowledge distillation, allowing researchers and practitioners to optimize models for deployment on resource-constrained devices.
 
-<div align="center">
-    <img src="https://via.placeholder.com/800x400?text=Model+Compression+Workflow" alt="Model Compression Workflow" width="80%">
-</div>
 
 ## ✨ Key Features
 
@@ -231,12 +228,6 @@ Here's a comparison of different compression techniques applied to ResNet50 on C
 </table>
 </div>
 
-### Performance Visualizations
-
-<div align="center">
-<img src="https://via.placeholder.com/400x300?text=Accuracy+vs+Size" alt="Accuracy vs Size" width="45%">
-<img src="https://via.placeholder.com/400x300?text=Accuracy+vs+Latency" alt="Accuracy vs Latency" width="45%">
-</div>
 
 ## 🔮 Advanced Usage
 
